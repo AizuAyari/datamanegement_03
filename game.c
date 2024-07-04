@@ -6,6 +6,10 @@ const char *toss_coin() { return rand() % 2 == 0 ? "Heads" : "Tails"; }
 
 int main() {
   srand(time(0));
+  char name[50];
+  printf("Who are you? \n> ");
+  scanf("%s", name);
+  printf("Hello, %s!\n", name);
 
   printf("Tossing a coin...\n");
 
